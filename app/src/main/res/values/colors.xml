@@ -1,0 +1,11 @@
+<resources>
+    <color name="terracotta_100">#f8e5d8</color>
+    <color name="terracotta_200">#e8c4a8</color>
+    <color name="terracotta_300">#d9a379</color>
+    <color name="terracotta_400">#c9824a</color>
+    <color name="terracotta_500">#b9621b</color>
+    <color name="terracotta_600">#964e16</color>
+    <color name="terracotta_700">#733a11</color>
+    <color name="terracotta_800">#50260c</color>
+    <color name="terracotta_900">#2d1207</color>
+</resources>
