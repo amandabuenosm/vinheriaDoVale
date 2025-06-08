@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+=======
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+>>>>>>> 5f9edbb31895efc48075b7ef03a7a3d0c3f1a718
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content">
 
         <!-- layout horizontal para o título + botão -->
@@ -24,21 +31,50 @@
                 android:text="Área do Vendedor"
                 android:textSize="26dp"
                 android:textStyle="bold" />
+=======
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:text="Área do Vendedor"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+>>>>>>> 5f9edbb31895efc48075b7ef03a7a3d0c3f1a718
 
             <Button
                 android:id="@+id/buttonSair"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+<<<<<<< HEAD
                 android:text="Sair"
                 android:textSize="18dp" />
+=======
+                android:textSize="18dp"
+                android:text="Sair"/>
+>>>>>>> 5f9edbb31895efc48075b7ef03a7a3d0c3f1a718
         </LinearLayout>
 
         <!-- layout vertical para os botões -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:padding="16dp"
             android:layout_marginTop="35dp"
+=======
+            android:layout_marginTop="40dp"
+>>>>>>> 5f9edbb31895efc48075b7ef03a7a3d0c3f1a718
             android:orientation="vertical">
 
             <Button

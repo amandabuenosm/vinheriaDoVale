@@ -1,0 +1,5 @@
+Este projeto consiste no desenvolvimento de um protótipo de aplicativo móvel, voltado para vendedores de vinhos, com o propósito de facilitar a gestão da vinheria e a atração de clientes. O aplicativo oferece uma interface diferenciada, permitindo que os vendedores controlem estoque e vendas, enquanto disponibiliza abas específicas para que os próprios clientes acessem e naveguem pelo catálogo de vinhos.
+
+Durante o desenvolvimento, a arquitetura foi planejada para proporcionar uma navegação intuitiva e uma interface moderna, atendendo às necessidades tanto dos vendedores quanto dos consumidores finais. O projeto foi realizado em grupo como trabalho final da disciplina de Desenvolvimento para Dispositivos Móveis, utilizando Kotlin e Java para construção nativa no Android.
+
+O projeto está em fase de desenvolvimento, com as funcionalidades básicas já implementadas e em constante aprimoramento, visando entregar uma solução escalável e de fácil manutenção. Futuras atualizações contemplarão melhorias na experiência do usuário, integração de funcionalidades avançadas e otimização de desempenho.
