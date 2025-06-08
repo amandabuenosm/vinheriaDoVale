@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Área do Vendedor"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- layout vertical para o texto e os botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manutenção de Clientes"
+                android:textSize="27sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="60dp"/>
+
+            <Button
+                android:id="@+id/clientesCadastrados"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:text="Meus Clientes"
+                android:layout_marginTop="25dp"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/novoCliente"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:textSize="24dp"
+                android:text="Cadastrar Novo Cliente"
+                android:layout_marginTop="25dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

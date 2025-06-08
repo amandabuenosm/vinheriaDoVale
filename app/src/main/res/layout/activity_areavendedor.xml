@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Área do Vendedor"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <!-- layout vertical para os botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_marginTop="35dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/manutencaoClientes"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24dp"
+                android:text="Manutenção de Clientes" />
+
+            <Button
+                android:id="@+id/dispEstoque"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:textSize="20dp"
+                android:text="Disponibilidade de Produtos para Venda" />
+
+            <Button
+                android:id="@+id/manutencaoPedidos"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24dp"
+                android:text="Manutenção de Pedidos" />
+
+            <Button
+                android:id="@+id/metasComissoes"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24dp"
+                android:text="Metas e Comissões" />
+
+            <Button
+                android:id="@+id/sugestoesDeRotas"
+                android:layout_width="360dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="24dp"
+                android:textSize="24dp"
+                android:text="Sugestões de Rotas" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
