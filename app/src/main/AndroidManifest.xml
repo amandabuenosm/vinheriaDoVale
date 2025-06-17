@@ -25,6 +25,7 @@
 
         </activity>
         <activity android:name=".ManutencaoClientesActivity" />
+        <activity android:name=".ClientesCadastradosActivity" />
     </application>
 
 </manifest>
