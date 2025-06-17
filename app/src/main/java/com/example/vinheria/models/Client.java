@@ -1,17 +1,25 @@
 package com.example.vinheria.models;
 
 public class Client {
-    private String name;
-    private String location;
-    private String contact;
+    private int id;
+    private String nome;
+    private String email;
 
-    public Client(String name, String location, String contact) {
-        this.name = name;
-        this.location = location;
-        this.contact = contact;
+    public Client() {}
+
+    public Client(int id, String nome, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.email = email;
     }
 
-    public String getName() { return name; }
-    public String getLocation() { return location; }
-    public String getContact() { return contact; }
+    // getters e setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getNome() { return nome; }
+    public void setNome(String nome) { this.nome = nome; }
+
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 }
