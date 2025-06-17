@@ -38,8 +38,9 @@
             <Button
                 android:id="@+id/btnCliente"
                 android:text="Cliente"
+                android:textSize="18sp"
                 android:layout_weight="1"
-                android:background="#b9621b"
+                android:backgroundTint="#b9621b"
                 android:textColor="#FFFFFF"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -47,8 +48,9 @@
             <Button
                 android:id="@+id/btnVendedor"
                 android:text="Vendedor"
+                android:textSize="18sp"
                 android:layout_weight="1"
-                android:background="#e8c4a8"
+                android:backgroundTint="#e8c4a8"
                 android:textColor="#733a11"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content" />
@@ -68,7 +70,7 @@
                 android:inputType="textEmailAddress"
                 android:background="@drawable/edittext_border"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:padding="10dp"
                 android:layout_marginBottom="12dp" />
 
@@ -78,14 +80,15 @@
                 android:inputType="textPassword"
                 android:background="@drawable/edittext_border"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:padding="10dp"
                 android:layout_marginBottom="16dp" />
 
             <Button
                 android:id="@+id/btnLoginCliente"
                 android:text="Entrar"
-                android:background="#b9621b"
+                android:textSize="18sp"
+                android:backgroundTint= "#b9621b"
                 android:textColor="#FFFFFF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
