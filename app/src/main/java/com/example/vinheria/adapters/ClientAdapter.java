@@ -1,65 +1,50 @@
 package com.example.vinheria.adapters;
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import androidx.annotation.NonNull;
+
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.vinheria.ClientDetailActivity;
 import com.example.vinheria.R;
 import com.example.vinheria.models.Client;
+
 import java.util.List;
 
 public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder> {
 
-    private final Context context;
-    private final List<Client> clientList;
+    private List<Client> listaClientes;
 
-    public ClientAdapter(Context ctx, List<Client> clients) {
-        this.context = ctx;
-        this.clientList = clients;
+    public ClientAdapter(List<Client> lista) {
+        this.listaClientes = lista;
     }
 
-    @NonNull
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+        public TextView nome, email;
+
+        public ViewHolder(View view) {
+            super(view);
+            nome = view.findViewById(R.id.textNomeCliente);
+            email = view.findViewById(R.id.textEmailCliente);
+        }
+    }
+
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(context).inflate(R.layout.item_client, parent, false);
+    public ClientAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cliente, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Client client = clientList.get(position);
-        holder.name.setText(client.getName());
-        holder.location.setText(client.getLocation());
-        holder.contact.setText(client.getContact());
-
-        holder.itemView.setOnClickListener(v -> {
-            Intent i = new Intent(context, ClientDetailActivity.class);
-            i.putExtra("clientName", client.getName());
-            i.putExtra("clientLocation", client.getLocation());
-            i.putExtra("clientContact", client.getContact());
-            context.startActivity(i);
-        });
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Client cliente = listaClientes.get(position);
+        holder.nome.setText(cliente.getNome());
+        holder.email.setText(cliente.getEmail());
     }
 
     @Override
     public int getItemCount() {
-        return clientList.size();
-    }
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView name, location, contact;
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-            name = itemView.findViewById(R.id.tvClientName);
-            location = itemView.findViewById(R.id.tvClientLocation);
-            contact = itemView.findViewById(R.id.tvClientContact);
-        }
+        return listaClientes.size();
     }
 }
