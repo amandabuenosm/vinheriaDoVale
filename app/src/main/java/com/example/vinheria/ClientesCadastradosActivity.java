@@ -1,6 +1,8 @@
 package com.example.vinheria;
 
 import android.os.Bundle;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -37,5 +39,11 @@ public class ClientesCadastradosActivity extends AppCompatActivity {
         List<Client> clientes = clienteDAO.listarClientes();
         adapters = new ClientAdapter(clientes);
         recyclerView.setAdapter(adapters);
+
+        Button buttonSair = findViewById(R.id.buttonSair);
+
+        buttonSair.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
