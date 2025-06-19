@@ -1,12 +1,16 @@
 package com.example.vinheria.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.vinheria.DetalheClienteActivity;
 import com.example.vinheria.R;
 import com.example.vinheria.models.Client;
 
@@ -14,7 +18,7 @@ import java.util.List;
 
 public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder> {
 
-    private List<Client> listaClientes;
+    private final List<Client> listaClientes;
 
     public ClientAdapter(List<Client> lista) {
         this.listaClientes = lista;
@@ -31,8 +35,9 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
     }
 
     @Override
-    public ClientAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_cliente, parent, false);
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+        .inflate(R.layout.item_cliente, parent, false);
         return new ViewHolder(view);
     }
 
@@ -41,6 +46,15 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
         Client cliente = listaClientes.get(position);
         holder.nome.setText(cliente.getNome());
         holder.email.setText(cliente.getEmail());
+
+        holder.itemView.setOnClickListener(v -> {
+            Context context = v.getContext();
+            Intent intent = new Intent(context, DetalheClienteActivity.class);
+            intent.putExtra("nome", cliente.getNome());
+            intent.putExtra("email", cliente.getEmail());
+
+            context.startActivity(intent);
+        });
     }
 
     @Override
