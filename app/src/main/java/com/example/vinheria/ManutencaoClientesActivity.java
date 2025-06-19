@@ -20,5 +20,11 @@ public class ManutencaoClientesActivity extends AppCompatActivity {
             Intent intent = new Intent(ManutencaoClientesActivity.this, ClientesCadastradosActivity.class);
             startActivity(intent);
         });
+
+        Button buttonSair = findViewById(R.id.buttonSair);
+
+        buttonSair.setOnClickListener(v -> {
+            finish();
+        });
     }
 }
