@@ -37,7 +37,7 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-        .inflate(R.layout.item_cliente, parent, false);
+                .inflate(R.layout.item_cliente, parent, false);
         return new ViewHolder(view);
     }
 
@@ -51,9 +51,16 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
             Context context = v.getContext();
             Intent intent = new Intent(context, DetalheClienteActivity.class);
             intent.putExtra("nome", cliente.getNome());
+            intent.putExtra("cpf_cnpj", cliente.getCpf_cnpj());
+            intent.putExtra("telefone", cliente.getTelefone());
             intent.putExtra("email", cliente.getEmail());
-
+            intent.putExtra("endereco", cliente.getEndereco());
+            intent.putExtra("cidade", cliente.getCidade());
+            intent.putExtra("estado", cliente.getEstado());
+            intent.putExtra("cep", cliente.getCep());
+            intent.putExtra("observacoes", cliente.getObservacoes());
             context.startActivity(intent);
+
         });
     }
 
