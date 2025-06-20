@@ -21,8 +21,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Área do Vendedor"
-                android:textSize="26dp"
+                android:text="Detalhes do Cliente"
+                android:textSize="26sp"
                 android:textStyle="bold" />
 
             <Button
@@ -30,30 +30,71 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Sair"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
+        <!-- Informações do cliente -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TextView
-                android:id="@+id/textDetalheNome"
+            <TextView android:id="@+id/textDetalheNome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nome"
-                android:textSize="24sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="10dp"/>
+                android:layout_marginBottom="8dp"/>
 
-            <TextView
-                android:id="@+id/textDetalheEmail"
+            <TextView android:id="@+id/textDetalheCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPF/CNPJ"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Email"
-                android:textSize="18sp" />
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheCidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cidade"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Estado"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheCep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEP"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheObservacoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Observações"
+                android:textSize="18sp"/>
 
         </LinearLayout>
     </LinearLayout>
