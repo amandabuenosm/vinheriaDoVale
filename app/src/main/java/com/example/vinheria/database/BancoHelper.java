@@ -15,7 +15,17 @@ public class BancoHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String sqlCliente = "CREATE TABLE clientes (id INTEGER PRIMARY KEY AUTOINCREMENT, nome TEXT, email TEXT)";
+        String sqlCliente = "CREATE TABLE clientes (" +
+                "id INTEGER PRIMARY KEY AUTOINCREMENT," +
+                "nome VARCHAR(100) NOT NULL," +
+                "cpf_cnpj VARCHAR(20) UNIQUE NOT NULL," +
+                "telefone VARCHAR(20)," +
+                "email VARCHAR(100)," +
+                "endereco TEXT," +
+                "cidade VARCHAR(50)," +
+                "estado CHAR(2)," +
+                "cep VARCHAR(10)," +
+                "observacoes TEXT)";
         db.execSQL(sqlCliente);
     }
 
