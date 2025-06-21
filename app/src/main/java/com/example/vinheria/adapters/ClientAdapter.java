@@ -25,12 +25,12 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        public TextView nome, email;
+        public TextView nome, cidadeEstado;
 
         public ViewHolder(View view) {
             super(view);
             nome = view.findViewById(R.id.textNomeCliente);
-            email = view.findViewById(R.id.textEmailCliente);
+            cidadeEstado = view.findViewById(R.id.textCidadeEstado);
         }
     }
 
@@ -45,7 +45,8 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
     public void onBindViewHolder(ViewHolder holder, int position) {
         Client cliente = listaClientes.get(position);
         holder.nome.setText(cliente.getNome());
-        holder.email.setText(cliente.getEmail());
+        holder.cidadeEstado.setText(cliente.getCidade() + ", " + cliente.getEstado());
+
 
         holder.itemView.setOnClickListener(v -> {
             Context context = v.getContext();
