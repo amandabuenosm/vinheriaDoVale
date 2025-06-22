@@ -50,6 +50,7 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
         holder.itemView.setOnClickListener(v -> {
             Context context = v.getContext();
             Intent intent = new Intent(context, DetalheClienteActivity.class);
+            intent.putExtra("id", cliente.getId());
             intent.putExtra("nome", cliente.getNome());
             intent.putExtra("cpf_cnpj", cliente.getCpf_cnpj());
             intent.putExtra("telefone", cliente.getTelefone());
