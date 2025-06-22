@@ -67,13 +67,9 @@ public class NovoClienteActivity extends AppCompatActivity {
             return;
         }
 
-        // 📝 LOG para ver o nome digitado
-        String nomeDigitado = editNome.getText().toString();
-        Log.d("DEBUG_NOME", "Nome digitado: " + nomeDigitado);
-
         // Cria cliente
         Client cliente = new Client();
-        cliente.setNome(nomeDigitado);
+        cliente.setNome(editNome.getText().toString());
         cliente.setCpf_cnpj(editCpfCnpj.getText().toString());
         cliente.setTelefone(editTelefone.getText().toString());
         cliente.setEmail(editEmail.getText().toString());
@@ -88,7 +84,7 @@ public class NovoClienteActivity extends AppCompatActivity {
 
         if (id != -1) {
             Toast.makeText(this, "Cliente cadastrado com sucesso!", Toast.LENGTH_SHORT).show();
-            finish(); // Fecha a activity após cadastro
+            finish();
         } else {
             Toast.makeText(this, "Erro ao cadastrar cliente.", Toast.LENGTH_SHORT).show();
         }
