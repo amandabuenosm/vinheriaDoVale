@@ -3,13 +3,15 @@ package com.example.vinheria;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.vinheria.dao.ClientDAO;
+
 public class DetalheClienteActivity extends AppCompatActivity {
 
-    private TextView nomeCliente, cpfCliente, telefoneCliente, emailCliente,
-            enderecoCliente, cidadeCliente, estadoCliente, cepCliente, observacoesCliente;
+    private TextView nomeCliente, cpfCliente, telefoneCliente, emailCliente, enderecoCliente, cidadeCliente, estadoCliente, cepCliente, observacoesCliente;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,22 @@ public class DetalheClienteActivity extends AppCompatActivity {
 
         Button buttonSair = findViewById(R.id.buttonSair);
         buttonSair.setOnClickListener(v -> finish());
+
+        Button buttonDeletar = findViewById(R.id.buttonDeletar);
+
+        // Pegando o id vindo da intent
+        int clienteId = getIntent().getIntExtra("id", -1);
+
+        buttonDeletar.setOnClickListener(v -> {
+            if (clienteId != -1) {
+                ClientDAO dao = new ClientDAO(DetalheClienteActivity.this);
+                dao.deletarCliente(clienteId);
+                Toast.makeText(this, "Cliente excluído com sucesso.", Toast.LENGTH_SHORT).show();
+                finish();
+            } else {
+                Toast.makeText(this, "Erro ao excluir cliente.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 }
