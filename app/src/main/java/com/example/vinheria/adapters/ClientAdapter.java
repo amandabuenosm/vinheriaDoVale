@@ -47,7 +47,6 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
         holder.nome.setText(cliente.getNome());
         holder.cidadeEstado.setText(cliente.getCidade() + ", " + cliente.getEstado());
 
-
         holder.itemView.setOnClickListener(v -> {
             Context context = v.getContext();
             Intent intent = new Intent(context, DetalheClienteActivity.class);
