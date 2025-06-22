@@ -20,9 +20,10 @@ public class ClientDAO {
     }
 
     // Inserir Cliente
-    public void inserirCliente(Client cliente) {
+    public long inserirCliente(Client cliente) {
         SQLiteDatabase db = dbHelper.getWritableDatabase();
         ContentValues valores = new ContentValues();
+
         valores.put("nome", cliente.getNome());
         valores.put("cpf_cnpj", cliente.getCpf_cnpj());
         valores.put("telefone", cliente.getTelefone());
@@ -32,7 +33,35 @@ public class ClientDAO {
         valores.put("estado", cliente.getEstado());
         valores.put("cep", cliente.getCep());
         valores.put("observacoes", cliente.getObservacoes());
-        db.insert("clientes", null, valores);
+
+        long id = db.insert("clientes", null, valores);
+        db.close();
+        return id;
+    }
+
+    // Editar Cliente
+    public void editarCliente(Client cliente) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        ContentValues valores = new ContentValues();
+
+        valores.put("nome", cliente.getNome());
+        valores.put("cpf_cnpj", cliente.getCpf_cnpj());
+        valores.put("telefone", cliente.getTelefone());
+        valores.put("email", cliente.getEmail());
+        valores.put("endereco", cliente.getEndereco());
+        valores.put("cidade", cliente.getCidade());
+        valores.put("estado", cliente.getEstado());
+        valores.put("cep", cliente.getCep());
+        valores.put("observacoes", cliente.getObservacoes());
+
+        db.update("clientes", valores, "id = ?", new String[]{String.valueOf(cliente.getId())});
+        db.close();
+    }
+
+    // Excluir Cliente
+    public void deletarCliente(int id) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        db.delete("clientes", "id = ?", new String[]{String.valueOf(id)});
         db.close();
     }
 
