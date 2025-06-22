@@ -60,7 +60,6 @@ public class ClientAdapter extends RecyclerView.Adapter<ClientAdapter.ViewHolder
             intent.putExtra("cep", cliente.getCep());
             intent.putExtra("observacoes", cliente.getObservacoes());
             context.startActivity(intent);
-
         });
     }
 
