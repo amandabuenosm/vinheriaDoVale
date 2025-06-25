@@ -15,7 +15,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
-        android:text="Agradecemos pela sua compra na Vinheria do Vale."
+        android:text="Agradecemos pela sua compra na Vini Eleganza."
         android:gravity="center"
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
