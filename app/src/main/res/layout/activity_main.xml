@@ -24,7 +24,7 @@
             android:id="@+id/mainTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vinheria do Vale"
+            android:text="Vini Eleganza"
             android:textSize="32sp"
             android:textColor="#111827"
             android:textStyle="bold"
@@ -146,7 +146,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="© 2025 Vinheria do Vale. Todos os direitos reservados."
+            android:text="© 2025 Vini Eleganza. Todos os direitos reservados."
             android:textAlignment="center"
             android:textColor="#9CA3AF"
             android:textSize="12sp"
