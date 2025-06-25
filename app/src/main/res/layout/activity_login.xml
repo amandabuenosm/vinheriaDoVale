@@ -13,7 +13,7 @@
         <!-- Título -->
         <TextView
             android:id="@+id/titleText"
-            android:text="Vinheria do Vale"
+            android:text="Vini Eleganza"
             android:textColor="#733a11"
             android:textSize="28sp"
             android:textStyle="bold"
