@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/terracotta_100"
     android:padding="16dp">
 
     <LinearLayout
@@ -12,9 +13,11 @@
         <ImageView
             android:id="@+id/imgDetailProduct"
             android:layout_width="match_parent"
-            android:layout_height="240dp"
-            android:scaleType="centerCrop" />
-            <!-- android:src="@drawable/sample_wine" -->
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/terracotta_200"
+            android:scaleType="centerCrop"
+            android:src="@drawable/salton_brut_rose" />
 
         <TextView
             android:id="@+id/tvDetailName"
@@ -23,15 +26,16 @@
             android:text="Nome do Produto"
             android:textSize="20sp"
             android:textStyle="bold"
+            android:textColor="@color/terracotta_800"
             android:layout_marginTop="16dp" />
 
         <TextView
             android:id="@+id/tvDetailPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="R$ 0,00"
+            android:text="R$ 89,90"
             android:textSize="18sp"
-            android:textColor="@android:color/holo_red_dark"
+            android:textColor="@color/terracotta_700"
             android:layout_marginTop="8dp" />
 
         <Button
@@ -39,8 +43,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Adicionar ao Carrinho"
-            android:layout_marginTop="24dp"
-            android:backgroundTint="#8B0000"
-            android:textColor="@android:color/white" />
+            android:backgroundTint="@color/terracotta_500"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp" />
     </LinearLayout>
 </ScrollView>
