@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/terracotta_200">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título e botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="@color/terracotta_700">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Metas e Comissões"
+                android:textColor="@color/terracotta_100"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSairMetas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/terracotta_200"
+                android:textColor="@color/terracotta_700"
+                android:text="Sair"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Campos -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/editMetaMensal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Meta Mensal (R$)"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editVendasRealizadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Vendas Realizadas (R$)"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvPercentualAtingido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Percentual Atingido: 0%"
+                android:textSize="18sp"
+                android:textColor="@color/terracotta_800"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/tvComissaoGerada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comissão: R$ 0,00"
+                android:textSize="18sp"
+                android:textColor="@color/terracotta_800"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/buttonCalcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calcular Comissão"
+                android:backgroundTint="@color/terracotta_500"
+                android:textColor="@color/terracotta_100"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:elevation="3dp"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/buttonSalvarMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar Dados"
+                android:backgroundTint="@color/terracotta_600"
+                android:textColor="@color/terracotta_100"
+                android:textSize="18sp"
+                android:padding="12dp"
+                android:elevation="3dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
