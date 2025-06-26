@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e8c4a8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="#733a11">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Detalhes do Pedido"
+                android:textColor="#f8e5d8"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#e8c4a8"
+                android:textColor="#733a11"
+                android:text="Sair"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Informações do cliente -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView android:id="@+id/textDetalheNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cliente: Vinícola Trevisol LTDA"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/textDetalheCpf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08.730.874/0001-06"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avenida Ouro Negro, 310, Povoado de Santana"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textDetalheCidadeEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Urussanga, SC"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Itens do Pedido"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/textDetalheItem_Qtde"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinho Tinto Padre Cícero 880ml || 10UN"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textPrecoUni_Total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço Unitário: R$75,00 || Preço Total: R$750,00"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vinho Tinto Suave Dom Bosco 750ml || 5UN"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço Unitário: R$60,00 || Preço Total: R$300,00"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valores do Pedido"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/textTotalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço total do pedido: R$1.050,00"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textPercentComissao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Percentual de comissão: 25%"
+                android:textSize="18sp"/>
+
+            <TextView android:id="@+id/textTotalComissao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor de comissão a receber: R$262,50"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView android:id="@+id/textStatusPed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status do Pedido: Faturado"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <TextView android:id="@+id/textDataEntrega"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data de entrega: 01/07/2025"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+
+        <!-- layout horizontal para o botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonEditar"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Editar"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:text="Cancelar"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:layout_margin="20dp"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
