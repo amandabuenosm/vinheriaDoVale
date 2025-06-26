@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8c4a8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#733a11">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Área do Vendedor"
+                android:textColor="#f8e5d8"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:backgroundTint="#e8c4a8"
+                android:textColor="#733a11"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- layout de botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:gravity="center"
+                android:text="Manutenção de Pedidos"
+                android:textColor="#2d1207"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/clientesCadastrados"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#733a11"
+                android:text="Meus Pedidos"
+                android:textColor="#f8e5d8"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/novoCliente"
+                android:layout_width="360dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:text="Criar Novo Pedido"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
