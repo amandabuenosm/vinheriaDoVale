@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/terracotta_200">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Título e botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            android:background="@color/terracotta_700">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Novo Produto"
+                android:textColor="@color/terracotta_100"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonSairProduto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/terracotta_200"
+                android:textColor="@color/terracotta_700"
+                android:text="Sair"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Campos do formulário -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/editNomeProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do Produto"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editSafra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Safra do Vinho"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editQtdeEstoque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantidade em Estoque"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editTipoVinho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tipo do Vinho"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editPrecoUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Preço Unitário (R$)"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editHarmonizacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Harmonização"
+                android:textSize="18sp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/editDegustacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Degustação"
+                android:textSize="18sp"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Botão salvar e importar imagem -->
+            <Button
+                android:id="@+id/buttonImportar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Importar Imagem"
+                android:backgroundTint="@color/terracotta_600"
+                android:textColor="@color/terracotta_100"
+                android:textSize="20sp"
+                android:padding="12dp"
+                android:elevation="3dp"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/buttonSalvarProduto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Salvar Pedido"
+                android:backgroundTint="@color/terracotta_600"
+                android:textColor="@color/terracotta_100"
+                android:textSize="20sp"
+                android:padding="12dp"
+                android:elevation="3dp"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
