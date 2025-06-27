@@ -15,7 +15,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
             android:exported="true">
 
             <intent-filter>
@@ -24,9 +24,15 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".MainActivity" />
         <activity android:name=".ManutencaoClientesActivity" />
         <activity android:name=".ClientesCadastradosActivity" />
         <activity android:name=".DetalheClienteActivity" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".CheckoutActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".OrderConfirmationActivity" />
+        <activity android:name=".ProductDetailActivity" />
         <activity android:name=".NovoClienteActivity" />
     </application>
 
