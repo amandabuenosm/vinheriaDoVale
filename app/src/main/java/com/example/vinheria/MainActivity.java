@@ -43,5 +43,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ManutencaoPedidosActivity.class);
             startActivity(intent);
         });
+
+        Button metasComissoes = findViewById(R.id.metasComissoes);
+
+        metasComissoes.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, MetasComissoesActivity.class);
+            startActivity(intent);
+        });
     }
 }

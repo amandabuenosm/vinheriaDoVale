@@ -28,6 +28,7 @@
         <activity android:name=".ManutencaoClientesActivity" />
         <activity android:name=".ManutencaoPedidosActivity" />
         <activity android:name=".ClientesCadastradosActivity" />
+        <activity android:name=".MetasComissoesActivity" />
         <activity android:name=".PedidosCadastradosActivity" />
         <activity android:name=".DetalheClienteActivity" />
         <activity android:name=".CartActivity" />
