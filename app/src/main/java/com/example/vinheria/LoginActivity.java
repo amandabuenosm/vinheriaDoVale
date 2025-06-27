@@ -10,8 +10,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.vinheria.R;
-
 public class LoginActivity extends AppCompatActivity {
 
     LinearLayout layoutCliente, layoutVendedor;
@@ -64,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
             } else if (email.equals("cliente@email.com") && senha.equals("1234")) {
                 Toast.makeText(this, "Login do Cliente bem-sucedido!", Toast.LENGTH_SHORT).show();
                 // Redireciona para próxima activity
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, HomeActivity.class));
                 finish();
             } else {
                 Toast.makeText(this, "Credenciais do cliente inválidas", Toast.LENGTH_SHORT).show();
