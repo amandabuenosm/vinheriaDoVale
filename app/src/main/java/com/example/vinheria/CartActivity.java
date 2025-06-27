@@ -27,7 +27,7 @@ public class CartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        listCart = findViewById(R.id.listCart);
+       // listCart = findViewById(R.id.listCart);
         totalCart = findViewById(R.id.totalCart);
         btnCheckout = findViewById(R.id.btnCheckout);
 

@@ -17,12 +17,12 @@ public class ProductDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_product_detail);
+        setContentView(R.layout.activity_detalhe_produto);
 
         tvName = findViewById(R.id.tvDetailName);
         tvPrice = findViewById(R.id.tvDetailPrice);
         imgProduct = findViewById(R.id.imgDetailProduct);
-        btnAddToCart = findViewById(R.id.btnAddToCart);
+        //btnAddToCart = findViewById(R.id.btnAddToCart);
 
         // Recuperar dados enviados da tela anterior
         String name = getIntent().getStringExtra("productName");

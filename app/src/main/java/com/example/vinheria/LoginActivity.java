@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.vinicola.R;
+import com.example.vinheria.R;
 
 public class LoginActivity extends AppCompatActivity {
 

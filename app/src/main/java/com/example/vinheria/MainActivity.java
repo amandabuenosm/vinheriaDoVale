@@ -29,5 +29,12 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, ManutencaoClientesActivity.class);
             startActivity(intent);
         });
+
+        Button dispEstoque = findViewById(R.id.dispEstoque);
+
+        dispEstoque.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, DispEstoqueActivity.class);
+            startActivity(intent);
+        });
     }
 }
