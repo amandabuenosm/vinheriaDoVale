@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8c4a8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Imagem reduzida -->
+        <ImageView
+            android:id="@+id/imgDetailProduct"
+            android:layout_width="200dp"
+            android:layout_height="350dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/salton_brut_rose" />
+
+        <!-- Nome do produto -->
+        <TextView
+            android:id="@+id/tvDetailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salton Ouro Brut Rosé 750ml"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/terracotta_800"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Safra -->
+        <TextView
+            android:id="@+id/tvDetailHarvest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Safra: Não Definido"
+            android:textSize="16sp"
+            android:textColor="@color/terracotta_700"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Tipo -->
+        <TextView
+            android:id="@+id/tvDetailType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo: Espumante Brut Rosé"
+            android:textSize="16sp"
+            android:textColor="@color/terracotta_700"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Degustação -->
+        <TextView
+            android:id="@+id/tvDetailTasting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Degustação: Apresenta coloração rosada delicada, com aromas de frutas vermelhas e toques florais. No paladar, é refrescante, equilibrado e cremoso."
+            android:textSize="16sp"
+            android:textColor="@color/terracotta_700"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Harmonização -->
+        <TextView
+            android:id="@+id/tvDetailPairing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harmonização: Ideal com entradas leves, carpaccio, frutos do mar e sobremesas à base de frutas."
+            android:textSize="16sp"
+            android:textColor="@color/terracotta_700"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Preço -->
+        <TextView
+            android:id="@+id/tvDetailPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R$ 89,90"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/terracotta_900"
+            android:gravity="center" />
+
+    </LinearLayout>
+</ScrollView>
