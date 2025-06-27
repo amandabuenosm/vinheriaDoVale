@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8c4a8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- layout horizontal para o título + botão -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:background="#733a11">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Área Administrativa"
+                android:textColor="#f8e5d8"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/buttonSair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:backgroundTint="#e8c4a8"
+                android:textColor="#733a11"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- layout de botões -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/manutencaoProdutos"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:textSize="18sp"
+                android:text="Manutenção de Produtos"/>
+
+            <Button
+                android:id="@+id/manutencaoRep"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:textSize="18sp"
+                android:text="Manutenção de Representantes"/>
+
+            <Button
+                android:id="@+id/manutencaoClientes"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:textSize="18sp"
+                android:text="Manutenção de Clientes"/>
+
+            <Button
+                android:id="@+id/controllerComissao"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:textSize="18sp"
+                android:text="Controle de Comissões"/>
+
+            <Button
+                android:id="@+id/relatorios"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#733a11"
+                android:textColor="#f8e5d8"
+                android:textSize="18sp"
+                android:text="Relatórios"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
